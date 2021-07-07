@@ -11,7 +11,7 @@ jobs:
     - name: Run a multi-line script
       run: |
         echo ----------------------
-        apt-get update -y
-        apt-get install -y php-cli
+        sudo apt-get update -y
+        sudo apt-get install -y php-cli
         php index.php
         echo ----------------------
