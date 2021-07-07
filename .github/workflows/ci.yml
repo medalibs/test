@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v2
-    - uses: php-actions/composer@v6
     - name: Run a multi-line script
       run: |
         echo ----------------------
+        apt-get update -y
+        apt-get install -y php-cli
         php index.php
         echo ----------------------
